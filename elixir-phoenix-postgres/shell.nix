@@ -35,6 +35,9 @@ let
     if ! mix phx.new --version; then
       mix archive.install hex phx_new $PHX_VERSION --force
     fi
+
+    # persist iex shell history
+    export ERL_AFLAGS="-kernel shell_history enabled -kernel shell_history_file_bytes 1024000"
   '';
 in
 
