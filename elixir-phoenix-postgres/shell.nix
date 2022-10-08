@@ -27,7 +27,8 @@ let
 
     mkdir -p $MIX_HOME $HEX_HOME
 
-    mix local.hex --if-missing --force
+    # leverage hex from Nixpkgs
+    export MIX_PATH="${beam.packages.erlang.hex}/lib/erlang/lib/hex/ebin"
 
     export PATH=$MIX_HOME/bin:$HEX_HOME/bin:$PATH
     export LANG=C.UTF-8
