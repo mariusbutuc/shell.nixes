@@ -1,12 +1,11 @@
+# https://hexdocs.pm/phoenix/installation.html
 { pkgs ? import <nixpkgs> {} }:
 
 with pkgs;
 
 let
-  elixir = beam.packages.erlangR25.elixir_1_13;
-
   basePackages = [
-    elixir
+    beam.packages.erlangR25.elixir_1_14
     git
   ];
 
