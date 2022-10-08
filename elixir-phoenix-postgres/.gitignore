@@ -23,5 +23,4 @@ erl_crash.dump
 /config/*.secret.exs
 .elixir_ls/
 
-.mix/
-.pgdata/
+.nix-mix/
