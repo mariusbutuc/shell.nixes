@@ -1,4 +1,6 @@
 # https://hexdocs.pm/phoenix/installation.html
+# https://nixos.org/manual/nixpkgs/stable/#elixir---phoenix-project
+
 { pkgs ? import <nixpkgs> {} }:
 
 with pkgs;
